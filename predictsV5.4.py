@@ -6,8 +6,8 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 # ==== Konfigurasi ====
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
-EPOCHS = 100
-DATASET_DIR = "dataset/v3"
+EPOCHS = 110
+DATASET_DIR = "dataset/v4"
 
 # ==== Fungsi Center Crop + Normalisasi ====
 def center_crop_and_resize(image, label):

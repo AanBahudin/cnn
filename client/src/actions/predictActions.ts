@@ -16,7 +16,6 @@ export const predictModel = async(formData: FormData) => {
 
   // gambar yang ditampilan di preview gambar sebelum dikirim ke model
   store.dispatch(setData(response.data))
-  store.dispatch(removeImage())
 
   // gambar yang ditampilkan di hasil klasifikasi
   store.dispatch(setUploaded(previewUrl))
