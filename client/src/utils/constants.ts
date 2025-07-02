@@ -23,12 +23,12 @@ export const penjelasanSarung = [
     desc: 'Motif Bancana Kaluku Bula adalah simbol kehidupan dan keberkahan, terinspirasi dari pucuk kelapa muda. Bentuk kotak-kotaknya rapat dan tidak terlalu besar. Warna dasarnya hijau, dengan kombinasi kuning dan putih yang lembut. Motif ini digunakan oleh perempuan dalam kegiatan adat maupun sehari-hari sebagai lambang kesuburan dan keharmonisan dengan alam.'
   },
   {
-    title: 'Katamba Layana Laki laki',
-    desc: 'Motif Katamba Layana berasal dari kata "katamba" yang berarti langit. Motif ini menggambarkan kedamaian dan ketenangan batin, ditampilkan dalam bentuk kotak-kotak agak besar dengan warna dasar biru menyerupai langit. Perpaduan warna biru tua dan putih memberikan kesan lapang dan sejuk. Motif ini digunakan oleh laki-laki dalam acara sakral sebagai simbol ketentraman jiwa.'
+    title: 'Katamba Gawu Laki laki',
+    desc: 'Motif Katamba Gawu berasal dari kata "katamba" yang berarti langit. Motif ini menggambarkan kedamaian dan ketenangan batin, ditampilkan dalam bentuk kotak-kotak agak besar dengan warna dasar biru menyerupai langit. Perpaduan warna biru tua dan putih memberikan kesan lapang dan sejuk. Motif ini digunakan oleh laki-laki dalam acara sakral sebagai simbol ketentraman jiwa.'
   },
   {
-    title: 'Katamba Layana Perempuan',
-    desc: 'Motif Katamba Layana melambangkan langit yang cerah dan damai. Corak kotak-kotaknya agak besar dan teratur. Warna dasar biru terang mencerminkan suasana langit pagi, dengan dominasi biru tua dan putih. Dipakai oleh perempuan dalam acara keagamaan dan budaya, motif ini mengandung filosofi kejernihan hati dan restu dari alam.'
+    title: 'Katamba Gawu Perempuan',
+    desc: 'Motif Katamba Gawu melambangkan langit yang cerah dan damai. Corak kotak-kotaknya agak besar dan teratur. Warna dasar biru terang mencerminkan suasana langit pagi, dengan dominasi biru tua dan putih. Dipakai oleh perempuan dalam acara keagamaan dan budaya, motif ini mengandung filosofi kejernihan hati dan restu dari alam.'
   },
   {
     title: 'Manggopa Laki laki',

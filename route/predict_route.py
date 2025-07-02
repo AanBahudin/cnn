@@ -10,15 +10,15 @@ import random
 class_names = [
     'Bancana Kaluku Bula Laki laki', 
     'Bancana Kaluku Bula Perempuan', 
-    'Katamba Layana Laki laki', 
-    'Katamba Layana Perempuan',
+    'Katamba Gawu Laki laki', 
+    'Katamba Gawu Perempuan',
     'Manggopa Laki laki',
     'Manggopa Perempuan',
     'Samasili Laki laki',
     'Samasili Perempuan'
 ]
 
-DATASET_DIR = "dataset/v3"  # Lokasi dataset
+DATASET_DIR = "dataset/ALL"  # Lokasi dataset
 MODEL_PATH = "models/v6/model_kain_tenun_mobilenetv2_crop.h5"
 
 # ======= Inisialisasi Blueprint =======
@@ -37,7 +37,7 @@ def center_crop_and_resize(img, target_size=(224, 224)):
     return img
 
 # ======= Ambil 3 Gambar Acak (Base64) =======
-def get_random_images_by_label(label, dataset_dir=DATASET_DIR, count=3):
+def get_random_images_by_label(label, dataset_dir=DATASET_DIR, count=5):
     label_dir = os.path.join(dataset_dir, label)
     if not os.path.exists(label_dir):
         return []

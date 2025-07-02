@@ -8,8 +8,8 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 # ===== Konfigurasi Dataset dan Model =====
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
-DATASET_DIR = "dataset/v3"
-MODEL_PATH = "models/v5.4.1/model_kain_tenun_mobilenetv2_crop.h5"
+DATASET_DIR = "dataset/v4"
+MODEL_PATH = "models/v6.1/model_kain_tenun_mobilenetv2_crop.h5"
 
 # ===== Center Crop + Normalisasi =====
 def preprocess(image, label):
