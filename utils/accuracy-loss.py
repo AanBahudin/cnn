@@ -5,8 +5,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 
 # ===== PATH ke model dan dataset test =====
-MODEL_PATH = "models/v6.1/model_kain_tenun_mobilenetv2_crop.h5"
-TEST_DIR = "dataset/v4"
+MODEL_PATH = "models/v7.2/model_cnn.h5"
+TEST_DIR = "dataset/TESTING"
 
 # ===== Load dataset test =====
 raw_test_ds = tf.keras.preprocessing.image_dataset_from_directory(
@@ -24,6 +24,7 @@ print("Label Kelas:", class_names)
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
 def preprocess(images, labels):
+    labels = tf.one_hot(labels, depth=len(class_names))  # ubah label ke one-hot
     return preprocess_input(images), labels
 
 test_ds = raw_test_ds.map(preprocess)
@@ -45,6 +46,9 @@ for images, labels in test_ds:
     predicted_labels = tf.argmax(predictions, axis=1)
     y_true.extend(labels.numpy())
     y_pred.extend(predicted_labels.numpy())
+
+# Konversi y_true dari one-hot ke label indeks
+y_true = np.argmax(y_true, axis=1)  # <<-- Tambahkan baris ini
 
 # ===== Classification Report =====
 print("\nClassification Report:")

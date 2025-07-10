@@ -8,8 +8,8 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 # ===== Konfigurasi Dataset dan Model =====
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
-DATASET_DIR = "dataset/v4"
-MODEL_PATH = "models/v6.1/model_kain_tenun_mobilenetv2_crop.h5"
+DATASET_DIR = "dataset/TESTING"
+MODEL_PATH = "models/v7.2/model_cnn.h5"
 
 # ===== Center Crop + Normalisasi =====
 def preprocess(image, label):
@@ -21,9 +21,6 @@ def preprocess(image, label):
 # ===== Load Data Validasi =====
 val_ds_raw = image_dataset_from_directory(
     DATASET_DIR,
-    validation_split=0.2,
-    subset="validation",
-    seed=123,
     image_size=(256, 256),
     batch_size=BATCH_SIZE,
     label_mode="categorical"

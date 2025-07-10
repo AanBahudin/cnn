@@ -19,7 +19,8 @@ class_names = [
 ]
 
 DATASET_DIR = "dataset/ALL"  # Lokasi dataset
-MODEL_PATH = "models/v6/model_kain_tenun_mobilenetv2_crop.h5"
+MODEL_PATH = "models/v7.2/model_cnn.h5"
+# MODEL_PATH = "model_cnn.h5"
 
 # ======= Inisialisasi Blueprint =======
 predict_blueprint = Blueprint('predict', __name__)

@@ -4,8 +4,9 @@ import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix
 
 # ===== Path ke model dan dataset =====
-MODEL_PATH = "models/v6.1/model_kain_tenun_mobilenetv2_crop.h5"
-TEST_DIR = "dataset/v4"
+MODEL_PATH = "models/v7.2/model_cnn.h5"
+# MODEL_PATH = "model_cnn.h5"
+TEST_DIR = "dataset/TESTING"
 
 # ===== Load dataset test =====
 raw_test_ds = tf.keras.preprocessing.image_dataset_from_directory(
