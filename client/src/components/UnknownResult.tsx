@@ -17,7 +17,7 @@ const UnknownResult = () => {
         <p className="text-sm text-muted-foreground leading-5">Motif kain pada gambar tidak dikenali sebagai salah satu dari delapan kategori kain tenun tradisional yang didukung oleh sistem.</p>
 
         <h3 className="text-lg mb-4 text-foreground font-semibold">Contoh gambar yang dikenali oleh sistem</h3>
-        <main className="w-fit grid grid-cols-4 gap-2 justify-items-start">
+        <main className="w-fit grid grid-cols-4 gap-x-10 gap-y-4 justify-items-start">
             {examples.map((item: any, index: number) => {
             return (
                 <img key={index} src={item} className="w-[100px] h-[100px] object-cover rounded border bg-muted" alt="Gambar serupa" />
