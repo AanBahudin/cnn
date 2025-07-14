@@ -4,7 +4,7 @@ import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix
 
 # ===== Path ke model dan dataset =====
-MODEL_PATH = "models/v7.2/model_cnn.h5"
+MODEL_PATH = "models/v7.3/model_cnn.h5"
 # MODEL_PATH = "model_cnn.h5"
 TEST_DIR = "dataset/TESTING"
 

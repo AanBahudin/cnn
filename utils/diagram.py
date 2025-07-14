@@ -5,7 +5,7 @@ import seaborn as sns
 from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
 
 # === GANTI SESUAI KONDISI KAMU ===
-model_path = 'models/v7.2/model_cnn.h5'
+model_path = 'models/v7.3/model_cnn.h5'
 test_dir = 'dataset/TRAINING'
 img_size = (224, 224)  # Sesuaikan dengan input model kamu
 batch_size = 32

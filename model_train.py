@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 # ==== Konfigurasi ====
 IMG_SIZE = (224, 224)       #   ukuran gambar yang digunakan untuk training
 BATCH_SIZE = 32             #   jumlah gambar yang akan dipreprocessing dalam 1 waktu
-EPOCHS =     17            #   jumlah pendekatan
+EPOCHS =     110            #   jumlah pendekatan
 TEST_DATASET = "dataset/TESTING"  #   letak dataset train yang digunakan untuk pembuatan model
 TRAINING_DATASET = "dataset/TRAINING"  #   letak dataset test yang digunakan untuk pembuatan model
 

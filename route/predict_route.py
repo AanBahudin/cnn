@@ -11,7 +11,7 @@ import base64
 
 # === Konfigurasi ===
 DATASET_DIR = "dataset/ALL"
-MODEL_PATH = "models/v7.2/model_cnn.h5"
+MODEL_PATH = "models/v7.3/model_cnn.h5"
 CENTROID_PATH = "centroids.pkl"
 IMAGE_SIZE = (224, 224)
 SIMILARITY_THRESHOLD = 0.75

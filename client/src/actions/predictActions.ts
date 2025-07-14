@@ -1,6 +1,6 @@
 import { customFetch } from "@/utils/customFetch";
 import { store } from "@/store";
-import { removeImage, setData, setUploaded } from "@/cart/globalSlice";
+import { setData, setUploaded } from "@/cart/globalSlice";
 
 export const predictModel = async(formData: FormData) => {
 
@@ -9,7 +9,8 @@ export const predictModel = async(formData: FormData) => {
 
   const response = await customFetch.post('/data/processing', formData)  
   if (response.status >= 400) {
-      return {message: 'Terjadi Kesalahan', deskripsi: 'kesalahan dalam mengupload gambar. Silahkan coba lagi nanti'}
+      return {
+        message: 'Terjadi Kesalahan', deskripsi: 'kesalahan dalam mengupload gambar. Silahkan coba lagi nanti'}
   }
 
   console.log(response.data)
